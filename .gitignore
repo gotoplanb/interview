@@ -63,3 +63,6 @@ Thumbs.db
 /priv/plts/*.plt
 /priv/plts/*.plt.hash
 
+# Additional Elixir-specific files
+*.beam
+/config/*.secret.exs
