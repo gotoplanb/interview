@@ -28,7 +28,12 @@ lint:
 
 # Run tests
 test:
-	mix test
+	mix test --cover
+
+# Run tests with HTML coverage report
+test-coverage:
+	mix test --cover --cover-format=html
+	@echo "Coverage report generated at cover/excoveralls.html"
 
 # Build project
 build:

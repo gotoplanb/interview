@@ -9,7 +9,14 @@ defmodule Interview.MixProject do
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps()
+      deps: deps(),
+      test_coverage: [tool: ExCoveralls],
+      preferred_cli_env: [
+        coveralls: :test,
+        "coveralls.detail": :test,
+        "coveralls.post": :test,
+        "coveralls.html": :test
+      ]
     ]
   end
 
@@ -51,7 +58,8 @@ defmodule Interview.MixProject do
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, ">= 0.0.0"},
-      {:hackney, "~> 1.18"}
+      {:hackney, "~> 1.18"},
+      {:excoveralls, "~> 0.18", only: :test}
     ]
   end
 
