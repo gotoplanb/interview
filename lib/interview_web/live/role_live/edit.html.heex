@@ -1,0 +1,14 @@
+<.header>
+  Edit Role <%= @role.id %>
+  <:subtitle>Use this form to manage roles in your database.</:subtitle>
+</.header>
+
+<.live_component
+  module={InterviewWeb.RoleLive.FormComponent}
+  id={@role.id}
+  title={@page_title}
+  action={:edit}
+  role={@role}
+/>
+
+<.back navigate={~p"/roles"}>Back to roles</.back> 
