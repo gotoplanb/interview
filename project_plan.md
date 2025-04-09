@@ -30,7 +30,7 @@ interview/
 
 ## Data Models
 
-### User
+### User ✓
 ```elixir
 schema "users" do
   field :name, :string

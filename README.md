@@ -2,35 +2,12 @@
 
 A Phoenix-based interview project with SQLite database.
 
-## Project Plan
+## Current Features
 
-### Phase 1: Project Setup and Basic Structure
-- [x] Initialize Phoenix project
-- [x] Set up SQLite database
-- [x] Create basic project structure
-- [x] Set up testing environment
-- [x] Create initial documentation
-
-### Phase 2: User Management
-- [x] Create User model
-- [ ] Implement user registration
-- [ ] Add user authentication
-- [ ] Create user profile management
-- [ ] Add user roles and permissions
-
-### Phase 3: Core Features
-- [ ] Implement interview scheduling
-- [ ] Create interview feedback system
-- [ ] Add candidate management
-- [ ] Implement interview templates
-- [ ] Create reporting system
-
-### Phase 4: Advanced Features
-- [ ] Add real-time notifications
-- [ ] Implement calendar integration
-- [ ] Create interview analytics
-- [ ] Add document management
-- [ ] Implement search functionality
+- User model with basic attributes
+- SQLite database integration
+- Test suite with model tests
+- Standardized development workflow with Makefile
 
 ## Development
 
