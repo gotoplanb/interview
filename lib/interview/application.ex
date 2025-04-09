@@ -11,8 +11,7 @@ defmodule Interview.Application do
       InterviewWeb.Telemetry,
       Interview.Repo,
       {Ecto.Migrator,
-        repos: Application.fetch_env!(:interview, :ecto_repos),
-        skip: skip_migrations?()},
+       repos: Application.fetch_env!(:interview, :ecto_repos), skip: skip_migrations?()},
       {DNSCluster, query: Application.get_env(:interview, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: Interview.PubSub},
       # Start a worker by calling: Interview.Worker.start_link(arg)

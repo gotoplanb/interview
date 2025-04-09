@@ -18,4 +18,4 @@ defmodule Interview.Accounts.User do
     |> validate_required([:name, :type])
     |> validate_inclusion(:type, [:employee, :candidate])
   end
-end 
+end

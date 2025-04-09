@@ -26,4 +26,4 @@ defmodule Interview.Accounts.UserTest do
       refute changeset.valid?
     end
   end
-end 
+end
