@@ -2,7 +2,6 @@ defmodule InterviewWeb.RoleLive.FormComponentTest do
   use InterviewWeb.ConnCase, async: true
 
   import Phoenix.LiveViewTest
-  import Interview.RolesFixtures
 
   @live_view_test_role %{
     name: "Test Role",
@@ -12,7 +11,7 @@ defmodule InterviewWeb.RoleLive.FormComponentTest do
   describe "Form Component" do
     test "renders form", %{conn: conn} do
       {:ok, lv, _html} = live(conn, "/roles")
-      
+
       assert lv |> element("a", "New Role") |> render_click() =~
                "New Role"
 
@@ -23,7 +22,7 @@ defmodule InterviewWeb.RoleLive.FormComponentTest do
 
     test "validates required fields", %{conn: conn} do
       {:ok, lv, _html} = live(conn, "/roles")
-      
+
       assert lv |> element("a", "New Role") |> render_click() =~
                "New Role"
 
@@ -37,7 +36,7 @@ defmodule InterviewWeb.RoleLive.FormComponentTest do
 
     test "creates a new role", %{conn: conn} do
       {:ok, lv, _html} = live(conn, "/roles")
-      
+
       assert lv |> element("a", "New Role") |> render_click() =~
                "New Role"
 
@@ -52,4 +51,4 @@ defmodule InterviewWeb.RoleLive.FormComponentTest do
       assert html =~ @live_view_test_role.description
     end
   end
-end 
+end

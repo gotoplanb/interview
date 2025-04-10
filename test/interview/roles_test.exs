@@ -19,7 +19,11 @@ defmodule Interview.RolesTest do
     end
 
     test "create_role/1 with valid data creates a role" do
-      valid_attrs = %{name: "Software Engineer", description: "Full stack developer role", active: true}
+      valid_attrs = %{
+        name: "Software Engineer",
+        description: "Full stack developer role",
+        active: true
+      }
 
       assert {:ok, %Role{} = role} = Roles.create_role(valid_attrs)
       assert role.name == "Software Engineer"
@@ -58,4 +62,4 @@ defmodule Interview.RolesTest do
       assert %Ecto.Changeset{} = Roles.change_role(role)
     end
   end
-end 
+end

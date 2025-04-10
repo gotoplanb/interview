@@ -16,4 +16,4 @@ defmodule Interview.RolesFixtures do
 
     role
   end
-end 
+end

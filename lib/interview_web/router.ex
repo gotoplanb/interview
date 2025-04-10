@@ -22,7 +22,7 @@ defmodule InterviewWeb.Router do
   scope "/", InterviewWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", RoleLive.Index, :index
 
     live "/roles", RoleLive.Index, :index
     live "/roles/new", RoleLive.Index, :new

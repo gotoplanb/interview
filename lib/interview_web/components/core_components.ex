@@ -5,7 +5,6 @@ defmodule InterviewWeb.CoreComponents do
   use Phoenix.Component
 
   alias Phoenix.LiveView.JS
-  import InterviewWeb.Gettext
 
   @doc """
   Renders flash notices.
